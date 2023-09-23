@@ -15,3 +15,6 @@ class Audio:
     
     def get_latest_chunk(self) -> np.array:
         return self.audio_array[-self.chunk_size:]
+    
+    def get_n_chunks(self, n) -> np.array:
+        return self.audio_array[-n * self.chunk_size:]
