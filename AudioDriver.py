@@ -22,6 +22,7 @@ class AudioDriver:
         self.stream_opened = False
         self.using_callback = False
         self.audio_array = np.array([])
+        self.stream = None
         pass
 
     # Open audio stream
@@ -65,7 +66,8 @@ class AudioDriver:
         while True:
             audio_data = self.stream.read(CHUNK_SIZE)
             self.write_chunk(audio_data)
-            aux(self.get_n_seconds(n))    
+            if not aux(self.get_n_seconds(n)):
+                break    
 
     # Get most recent N seconds of audio
     def get_n_seconds(self, n) -> Audio:
