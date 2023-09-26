@@ -3,7 +3,6 @@ This is a simple demo that utilises the AudioDriver class, plotting the audio
 data sourced from the microphone in real time, using the listen_and_do function.
 '''
 import AudioDriver as AD
-import AudioHandler as AH
 import matplotlib.pyplot as plt
 import numpy as np
 
