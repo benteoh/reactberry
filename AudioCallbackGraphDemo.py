@@ -3,7 +3,7 @@ This is a simple demo that utilises the AudioDriver class, plotting the audio
 data sourced from the microphone in real time, using a callback.
 '''
 import AudioDriver as AD
-import AudioHandler as AH
+import AudioAnalyser as AH
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -13,7 +13,7 @@ CHUNK_SIZE = 1024   # Number of samples per chunk
 
 def main():
     # Initialize audio driver and handler
-    audio_handler = AH.AudioHandler(AD.AudioDriver())
+    audio_handler = AH.AudioAnalyser(AD.AudioDriver())
     
     # Set up plot
     plt.ion()
