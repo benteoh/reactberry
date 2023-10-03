@@ -1,2 +1,4 @@
-class AudioSemantics:
-    def __init__(self, intensity: float, emotion: Emotion, undertones: list)
+import Emotion
+class AudioSentiment:
+    def __init__(self, emotion: Emotion, undertones: list):
+        pass
