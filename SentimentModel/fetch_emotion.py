@@ -1,0 +1,33 @@
+def get_emotion(file_path):
+    item = file_path.split('/')[-1]
+    if item[6:-16]=='02':
+        return 'calm'
+    elif item[6:-16]=='03':
+        return 'happy'
+    elif item[6:-16]=='04':
+        return 'sad'
+    elif item[6:-16]=='05':
+        return 'angry'
+    elif item[6:-16]=='06':
+        return 'fearful'
+    elif item[6:-16]=='01':
+        return 'neutral'
+    elif item[6:-16]=='07':
+        return 'disgusted'
+    elif item[6:-16]=='08':
+        return 'surprised'
+    elif item[:1]=='a':
+        return 'angry'
+    elif item[:1]=='f':
+        return 'fearful'
+    elif item[:1]=='h':
+        return 'happy'
+    elif item[:1]=='n':
+        return 'neutral'
+    elif item[:2]=='sa':
+        return 'sad'
+    elif item[:1]=='d':
+        return 'disgusted'
+    elif item[:2]=='su':
+        return 'surprised'
+        

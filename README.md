@@ -17,3 +17,6 @@ Completed:
     2) Create Audio Class
     3) Create Demos for Driver
     4) Create analyser wrapper for audio driver
+
+Note on Sentiment Analyser:
+    The model was trained on the RAVDESS dataset provided on the Zenodo platform. Only the audio clips were used (Audio_Song_Actors_01-24 and Audio_Speech_Actors_01-24). More details can be found on https://zenodo.org/record/1188976.
