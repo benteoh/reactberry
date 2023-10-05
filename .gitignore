@@ -1,2 +1,4 @@
 __pycache__/
 audiofiles/
+.ipynb_checkpoints/
+SentimentModel/.ipynb_checkpoints/
