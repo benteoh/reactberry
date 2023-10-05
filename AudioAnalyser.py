@@ -25,17 +25,14 @@ class AudioAnalyser: # for now this is useless
         chunk = audio.get_latest_chunk()
         
         # Obtain average volume of last chunk.
-        current_volume = np.average(np.abs(chunk)) #revise
+        current_volume = np.average(np.abs(chunk))
         
         # Obtain average volume of last 5 seconds.
-        average_volume = np.average(np.abs(audio.audio_array)) #revise
+        average_volume = np.average(np.abs(audio.audio_array))
         
-        # Obtain frequency of last chunk.
-        frequency = np.fft.fft(chunk) #revise, need to get only the important info
-        
-        # Using the sentiment analyser, obtain sentiment of last 5 seconds.
+        # Analyse sentiment of audio sample.
         sentiment = self.sentiment_analyser.analyse(audio)
         
-        return [current_volume, average_volume, frequency, sentiment]
+        return [current_volume, average_volume, sentiment]
         
         
