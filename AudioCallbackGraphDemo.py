@@ -13,7 +13,7 @@ CHUNK_SIZE = 1024   # Number of samples per chunk
 
 def main():
     # Initialize audio driver and handler
-    audio_handler = AH.AudioAnalyser(AD.AudioDriver())
+    audio_handler = AH.AudioAnalyser(AD.AudioDriver(), None)
     
     # Set up plot
     plt.ion()
