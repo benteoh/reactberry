@@ -1,5 +1,10 @@
 # reactberry
 WIP Project
+-----------
+This is a Raspberry Pi project to streamline audio from the microphone, analyse it, and control LED strips, according to the sound.
+It's an interesting program that can make a music/movie experience better. 
+Additionally, this project includes the training source code for the Audio Sentiment model, which is not a requirement to run the program.
+And there are demos for the Audio Pipeline, using matplotlib (not a requirement for the intended purpose).
 
 **Flow of modules:**  
     1) Audio Driver: Pulls bitstream from microphone and converts into Audio Object  
@@ -20,4 +25,5 @@ WIP Project
     4) Create analyser wrapper for audio driver  
 
 **Note on Sentiment Analyser:**  
-    The model was trained on the RAVDESS dataset provided on the Zenodo platform. Only the audio clips were used (Audio_Song_Actors_01-24 and Audio_Speech_Actors_01-24). More details can be found at https://zenodo.org/record/1188976.  
+    The model was trained on the RAVDESS dataset provided on the Zenodo platform. Only the audio clips were used (Audio_Song_Actors_01-24 and Audio_Speech_Actors_01-24). 
+    More details can be found at https://zenodo.org/record/1188976.  
