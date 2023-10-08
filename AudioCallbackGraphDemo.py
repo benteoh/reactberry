@@ -8,11 +8,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Some constants
-CHUNKS = 20         # Number of chunks to plot (reduce for better performance)
+CHUNKS = 10         # Number of chunks to plot (reduce for better performance)
 CHUNK_SIZE = 1024   # Number of samples per chunk
 
 def main():
-    # Initialize audio driver and handler
+    # Initialize audio driver and analyser.
     audio_handler = AudioAnalyser(AudioDriver(), None)
     
     # Set up plot
