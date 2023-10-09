@@ -8,6 +8,6 @@ def get_emotion_number(file_path):
 
 # Returns the corresponding emotion in string form. 
 def get_emotion_str(n):
-    emotions = ['neutral', 'happy', 'sad', 'angry', 'fearful', 'digust', 'surprised']
+    emotions = ['neutral', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised']
     return emotions[n]
     
