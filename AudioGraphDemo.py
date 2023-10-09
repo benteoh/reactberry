@@ -9,7 +9,6 @@ import numpy as np
 # Some constants
 CHUNKS = 10         # Number of chunks to plot (reduce for better performance)
 CHUNK_SIZE = 1024   # Number of samples per chunk
-RATE = 44100        # Sampling rate
 
 def main():
     # Initialize audio driver

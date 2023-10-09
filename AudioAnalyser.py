@@ -1,6 +1,6 @@
 import Audio
 import numpy as np
-N_SECONDS = 5
+N_SECONDS = 3
 
 class AudioAnalyser: # for now this is useless
     def __init__(self, audio_driver, sentiment_analyser):
@@ -31,7 +31,9 @@ class AudioAnalyser: # for now this is useless
         average_volume = np.average(np.abs(audio.audio_array))
         
         # Analyse sentiment of audio sample.
-        sentiment = self.sentiment_analyser.analyse(audio)
+        sentiment = None
+        if audio.get_seconds() == 3:
+            sentiment = self.sentiment_analyser.analyse(audio)
         
         return [current_volume, average_volume, sentiment]
         
