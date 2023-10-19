@@ -27,3 +27,8 @@ And there are demos for the Audio Pipeline, using matplotlib (not a requirement 
 **Note on Sentiment Analyser:**  
     The model was trained on the RAVDESS dataset provided on the Zenodo platform. Only the audio clips were used (Audio_Song_Actors_01-24 and Audio_Speech_Actors_01-24). 
     More details can be found at https://zenodo.org/record/1188976.  
+    Additionally, data was added from the TESS dataset. Find it on https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess
+
+**How To Get Dataset?**  
+    1) RAVDESS Dataset: Run the `audiofiles/get_ravdess.py` script to get the dataset.  
+    2) TESS Dataset: Unfortunately, the dataset cannot be downloaded via the command line. But, you can download the zip folder and unzip it in `audiofiles/`.  
